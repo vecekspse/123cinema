@@ -8,3 +8,16 @@ seats.forEach(seat => {
             seat.classList.toggle("bg-success");    
     });
 });
+
+const reset = document.querySelector(".reset");
+
+reset.addEventListener("click", function (evt) {
+    seats.forEach(seat => seat.classList.remove("bg-success"));
+    /*
+    for(let seat of seats) {
+        seat.classList.remove("bg-success");
+    }
+    */
+});
+
+
