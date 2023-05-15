@@ -9,3 +9,11 @@ seats.forEach(seat => {
     });
 })
 
+const reset = document.querySelector(".reset");
+
+reset.addEventListener("click", function () {
+    document.querySelectorAll(".seats .seat.bg-success")
+    .forEach(seat => seat.classList.remove("bg-success"));
+});
+
+
