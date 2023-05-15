@@ -1,7 +1,10 @@
 "use strict"
 
-const seat = document.querySelector(".seat");
+const seats = document.querySelectorAll(".seat");
 
-seat.addEventListener('click', function (evt) {
-        seat.classList.toggle("bg-success");    
+// for(let seat of seats) {
+seats.forEach(seat => {
+    seat.addEventListener('click', function (evt) {
+            seat.classList.toggle("bg-success");    
+    });
 });
